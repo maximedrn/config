@@ -1,0 +1,91 @@
+{
+  "[opencode]": {
+    "agents": {
+      "sisyphus": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "sisyphus-junior": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "atlas": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "explore": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "hephaestus": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "librarian": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "metis": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "momus": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "multimodal-looker": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "oracle": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      },
+      "prometheus": {
+        "model": "custom/default",
+        "maxTokens": 131072
+      }
+    },
+    "categories": {
+      "artistry": {
+        "model": "custom/default",
+        "max_tokens": 131072
+      },
+      "deep": {
+        "model": "custom/default",
+        "max_tokens": 131072
+      },
+      "quick": {
+        "model": "custom/default",
+        "max_tokens": 131072
+      },
+      "ultrabrain": {
+        "model": "custom/default",
+        "max_tokens": 131072
+      },
+      "unspecified-high": {
+        "model": "custom/default",
+        "max_tokens": 131072
+      },
+      "unspecified-low": {
+        "model": "custom/default",
+        "max_tokens": 131072
+      },
+      "visual-engineering": {
+        "model": "custom/default",
+        "max_tokens": 131072
+      },
+      "writing": {
+        "model": "custom/default",
+        "max_tokens": 131072
+      }
+    },
+    "background_task": {
+      "messageStalenessTimeoutMs": 36000000,
+      "staleTimeoutMs": 36000000,
+      "syncPollTimeoutMs": 36000000,
+      "taskTtlMs": 36000000
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/omo.schema.json",
+}

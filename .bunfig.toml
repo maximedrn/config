@@ -1,0 +1,9 @@
+telemetry = false
+
+[install]
+exact = true
+linker = "isolated"
+
+[install.cache]
+disable = false
+disableManifest = false

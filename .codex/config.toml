@@ -1,0 +1,15 @@
+model = "gpt-5.6"
+model_reasoning_effort = "xhigh"
+model_verbosity = "low"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+web_search = "live"
+
+[sandbox_workspace_write]
+network_access = true
+
+[features]
+multi_agent = true
+memories = true
+goals = true
+fast_mode = true

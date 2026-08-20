@@ -1,0 +1,19 @@
+export DO_NOT_TRACK=1
+
+# Brew (Package Manager).
+export HOMEBREW_NO_ENV_HINTS=1
+export HOMEBREW_NO_ANALYTICS=1
+
+# Claude Code.
+export DISABLE_TELEMETRY=1
+export DISABLE_ERROR_REPORTING=1
+export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
+
+# Bun (JavaScript runtime).
+export BUN_TELEMETRY_DISABLED=1  
+
+# Next.js.
+export NEXT_TELEMETRY_DISABLED=1
+
+# Nuxt.js.
+export NUXT_TELEMETRY_DISABLED=1
