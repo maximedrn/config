@@ -1,0 +1,69 @@
+name: Sync shell environment files
+
+on:
+  push:
+    branches:
+      - "**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-shell-environment-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    if: github.ref_type == 'branch'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the current branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Copy .zshrc to compatible shell files
+        shell: bash
+        run: |
+          targets=(
+            .profile
+            .bashrc
+            .bash_profile
+            .bash_login
+            .zprofile
+            .zshenv
+            .zlogin
+            .kshrc
+          )
+
+          for target in "${targets[@]}"; do
+            cp -- .zshrc "$target"
+          done
+
+      - name: Commit and push synchronized files
+        shell: bash
+        run: |
+          targets=(
+            .profile
+            .bashrc
+            .bash_profile
+            .bash_login
+            .zprofile
+            .zshenv
+            .zlogin
+            .kshrc
+          )
+
+          git add -- "${targets[@]}"
+
+          if git diff --cached --quiet; then
+            echo "Shell environment files are already synchronized."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: sync shell environment files"
+          git push origin "HEAD:refs/heads/${GITHUB_REF_NAME}"
