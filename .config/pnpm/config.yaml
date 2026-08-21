@@ -1,0 +1,10 @@
+blockExoticSubdeps: true
+dangerouslyAllowAllBuilds: false
+minimumReleaseAge: 4320
+minimumReleaseAgeIgnoreMissingTime: false
+minimumReleaseAgeStrict: true
+savePrefix: ''
+strictDepBuilds: true
+trustLockfile: false
+trustPolicy: no-downgrade
+updateNotifier: false

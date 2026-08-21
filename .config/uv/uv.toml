@@ -1,0 +1,9 @@
+index-strategy = "first-index"
+exclude-newer = "3 days"
+no-build = true
+python-downloads = "manual"
+allow-insecure-host = []
+keyring-provider = "disabled"
+
+[audit]
+malware-check = true

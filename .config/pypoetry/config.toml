@@ -1,0 +1,12 @@
+[solver]
+min-release-age = 3
+
+[installer]
+re-resolve = false
+only-binary = [":all:"]
+
+[virtualenvs]
+create = true
+
+[virtualenvs.options]
+system-site-packages = false
