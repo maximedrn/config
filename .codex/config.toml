@@ -12,3 +12,6 @@ multi_agent = true
 memories = true
 goals = true
 fast_mode = true
+prevent_idle_sleep = true
+analytics_plan_history = true
+respect_system_proxy = true

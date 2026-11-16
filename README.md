@@ -3,7 +3,7 @@
 Tool and agent configurations that can be copied from one computer to another.
 
 > [!NOTE]
-> *Last modified: August 21, 2026*
+> *Last modified: November 16, 2026*
 
 ## Installation
 
